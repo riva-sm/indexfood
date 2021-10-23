@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1194px;
+  margin: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.search-form {
+  margin-left: 76px;
+  background-color: rgba(238, 238, 238, 0.71);
+  border-radius: 10px;
+  display: flex;
+  max-width: 620px;
+  flex-grow: 1;
+  position: relative;
+}
+.search-input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 13px 20px;
+  font-size: 16px;
+  line-height: 23px;
+  color: #57565b;
+}
+.search-button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 0 18px;
+}
+.auth {
+  margin-left: auto;
+}
+.login {
+  background-color: #ebebeb;
+  border-radius: 50px;
+  padding: 16px 30px;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+}
+.shopping-cart {
+  position: relative;
+  width: 49px;
+  height: 49px;
+  background-color: #f66a15;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+.shopping-counter {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  background: #ffaf19;
+  padding: 5px;
+  display: block;
+  font-size: 8px;
+  line-height: 9px;
+  color: #000000;
+  border-radius: 50%;
+}
