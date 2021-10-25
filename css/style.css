@@ -191,9 +191,9 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  flex-shrink: 0;
-  flex-grow: 1;
+  flex-basis: 50%;
+  /* flex-shrink: 0;
+  flex-grow: 1; */
 }
 .card-text-light {
   color: #fff;
@@ -248,4 +248,262 @@ a {
   z-index: -2;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.delivery-week {
+  padding: 50px 0 100px;
+}
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.delivery-card {
+  position: relative;
+  width: 275px;
+  height: 182px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.delivery-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.delivery-tag {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+.tag-health {
+  color: #49494f;
+  background-color: #d0fd89;
+}
+.tag-vegetables {
+  color: #ffffff;
+  background-color: #aebc41;
+}
+.tag-meat {
+  color: #ffffff;
+  background: #b86b78;
+}
+.tag-bird {
+  color: #ffffff;
+  background-color: #d68334;
+}
+.tag-fish {
+  color: #ffffff;
+  background-color: #cd6255;
+}
+.tag-children {
+  color: #49494f;
+  background-color: #fffdbf;
+}
+.tag-parents {
+  color: #49494f;
+  background-color: #f6fdc8;
+}
+.tag-holiday {
+  color: #49494f;
+  background-color: #fef7fe;
+}
+
+.section-gray {
+  background-color: #f6f6f6;
+  padding: 40px 0 60px;
+}
+
+.tabs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 62px;
+}
+.tabs-item:not(:last-child) {
+  margin-right: 57px;
+}
+.tabs-link.active {
+  color: #f37321;
+}
+.tabs-link {
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494f;
+}
+.tabs-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+}
+.tabs-card {
+  max-width: 270px;
+  background: #ffffff;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.tabs-image {
+  max-width: 100%;
+}
+.tabs-card-content {
+  padding: 23px;
+}
+.tabs-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+.tabs-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b9be;
+}
+.tabs-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tabs-price {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  display: block;
+  margin-bottom: 5px;
+  color: #4b4b51;
+}
+.tabs-weight {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #aaaab1;
+}
+.button-outline {
+  padding: 18px 25px 15px 25px;
+  border: 2px solid #f37321;
+  border-radius: 33px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f37321;
+  transition: all 0.3s ease-in;
+}
+.button-outline:hover {
+  background: #ffa871;
+  color: #fff;
+}
+.button-center {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  width: 315px;
+}
+.benefits {
+  padding: 100px 0 200px;
+}
+
+.benefits-cards {
+  display: flex;
+  gap: 37px;
+}
+.benefit-card {
+  max-width: 270px;
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 25px;
+}
+.benefit-card-svg {
+  width: 60px;
+  height: 60px;
+  fill: #f37321;
+}
+
+.benefit-card-svg:hover {
+  fill: white;
+}
+.benefit-card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 13px;
+  width: 200px;
+}
+.benefit-description {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #49494f;
+  margin: 0;
+}
+.benefit-card:hover {
+  background: #f37321;
+  border: 1px solid #f37321;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  transition: all 0.5s;
+}
+.benefit-card:hover svg {
+  fill: #fff;
+}
+.benefit-card:hover .benefit-card-title,
+.benefit-card:hover .benefit-description {
+  color: #fff;
+}
+
+.footer {
+  background-color: #f6f6f6;
+  padding: 40px 0;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  margin-right: 50px;
+}
+.footer-link {
+  font-size: 16px;
+  line-height: 23px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #000000;
+  margin-right: 50px;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.social-link {
+  margin-right: 20px;
+}
+.social-link:last-child {
+  margin-right: 0;
 }
