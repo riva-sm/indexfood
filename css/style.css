@@ -81,8 +81,9 @@ a {
   justify-content: center;
   margin-left: 30px;
 }
+
 .shopping-cart svg {
-fill:#fff;
+  fill: #fff;
 }
 .shopping-counter {
   position: absolute;
@@ -140,6 +141,14 @@ fill:#fff;
   background-image: url("../img/summer.png");
 }
 
+.slide-autumn {
+  background-image: url("../img/autumn.png");
+}
+
+.slide-vitamin {
+  background-image: url("../img/vitamin.png");
+}
+
 .slide::before {
   content: "";
   position: absolute;
@@ -154,6 +163,19 @@ fill:#fff;
   );
 }
 
+.slider-buttons {
+  position: absolute;
+  bottom: 40px;
+  right: 46px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+.slider-button {
+  cursor: pointer;
+}
 .button-primary {
   background: #f47322;
   border-radius: 25px;
@@ -509,4 +531,159 @@ fill:#fff;
 }
 .social-link:last-child {
   margin-right: 0;
+}
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .tabs-card {
+    flex: 50%;
+    max-width: calc(50% - 30px);
+  }
+  .benefits-cards {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .benefit-card {
+    max-width: 219px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+  .slide {
+    padding: 70px;
+  }
+  .delivery-card {
+    width: calc(50% - 30px);
+  }
+  .benefit-card {
+    width: calc(50% - 30px);
+    max-width: 100%;
+  }
+  .footer-logo {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .search-form {
+    order: 5;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .tabs {
+    flex-wrap: wrap;
+  }
+  .tabs-item:not(:last-child) {
+    margin-right: 57 px;
+  }
+  .tabs-item {
+    margin-bottom: 20px;
+  }
+  .promo {
+    flex-wrap: wrap;
+  }
+  .card {
+    flex-basis: 100%;
+  }
+  .footer-wrapper {
+    flex-wrap: wrap;
+  }
+  .benefits,
+  .promo {
+    padding: 80px 0;
+  }
+  .slide {
+    background-position: top right;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .tabs-card {
+    max-width: 100%;
+  }
+  .delivery-card {
+    width: 100%;
+    max-width: 100%;
+  }
+  .benefit-card {
+    width: 100%;
+    max-width: 100%;
+  }
+  .footer-link {
+    margin-right: 20px;
+  }
+  .social-links {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .slide-title {
+    font-size: 40px;
+  }
+  .slide {
+    padding: 20px;
+  }
+  .footer-logo {
+    margin-right: 0;
+  }
+  .social-links {
+    margin-top: 20px;
+  }
+  .footer-wrapper {
+    justify-content: center;
+  }
+  .benefits,
+  .promo {
+    padding: 50px 0;
+  }
+  .button-center {
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    width: 261px;
+  }
+}
+
+@media (max-width: 380px) {
+  .shopping-cart {
+    margin-left: 8px;
+  }
+  .auth {
+    margin-left: 10px;
+  }
+  .slide-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .slide-text {
+    margin-bottom: 15px;
+  }
+  .slide {
+    background-position: top right;
+  }
+  .section-title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
 }
